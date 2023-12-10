@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='../public/login.css'>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background-color: rgb(243, 230, 242);
+}
+
+
+input{
+    font-size: 1rem;
+    width: 300px;
+    padding: 6px 2px;
+    margin: 10px 0 10px 0;
+}
+
+.sub{
+    background-color: rgb(92, 223, 52);
+    cursor:pointer
+}
+
+form{
+    width: fit-content;
+    text-align: center;
+    margin-top: 200px;
+    border: 5px solid rgb(139, 1, 1);
+
+    padding: 20px;
+    background-color: rgb(102, 135, 189);
+}
+    </style>
+</head>
+<body>
+
+
+
+    <form action="/login" method="post">
+    <h1>Log In</h1>
+    <br>
+        <input type="text" name="name" placeholder="Name"><br>
+        <input type="password" name="password" placeholder="Password"><br>
+        <input type="submit">
+    </form>
+
+    <a href="./signup">Make a new Account</a>
+    
+</body>
+</html>
